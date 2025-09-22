@@ -1,0 +1,5 @@
+package springbootbasic.model;
+
+public class Person {
+
+}

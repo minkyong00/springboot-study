@@ -1,0 +1,11 @@
+package springbootbasic.model;
+
+import java.io.Serializable;
+
+public class Person implements Serializable {
+	
+	public static final long serialVersionUID = 65626262626L;
+	
+	
+
+}

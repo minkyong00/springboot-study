@@ -1,0 +1,31 @@
+package springbootbasic.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
+
+import springbootbasic.service.PersonService;
+
+@Controller("personController")
+public class PersonController {
+
+	@Autowired
+	private PersonService personService;
+	
+	@GetMapping("/getPersonList")
+	public String getPersonList() {
+		ModelAndView mav = new ModelAndView();
+		mav.addObject("personList", personService.getPersonList());
+		return "personList";
+	}
+	
+	@GetMapping("/getPerson")
+	public String getPerson(@RequestParam Integer pid) {
+		ModelAndView mav = new ModelAndView();
+		mav.addObject("person", personService.getPerson(pid));
+		return "personView";
+	}
+	
+}

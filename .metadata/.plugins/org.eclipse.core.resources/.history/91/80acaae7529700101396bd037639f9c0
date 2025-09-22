@@ -1,0 +1,6 @@
+# application name
+spring.application.name=springbootbasic
+
+# banner setting
+spring.main.banner-mode=console
+spring.banner.location=banner/banner.txt

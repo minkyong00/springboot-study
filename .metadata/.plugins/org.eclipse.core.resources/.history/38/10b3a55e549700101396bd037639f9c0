@@ -1,0 +1,5 @@
+package springbootbasic.service;
+
+public interface PersonService {
+
+}

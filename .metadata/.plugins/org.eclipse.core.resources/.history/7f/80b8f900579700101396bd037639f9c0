@@ -1,0 +1,19 @@
+package springbootbasic;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.WebApplicationType;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class SpringbootbasicApplication {
+
+	public static void main(String[] args) {
+		
+		SpringApplication app = new SpringApplication(SpringbootbasicApplication.class);
+//		app.setWebApplicationType(WebApplicationType.NONE); // 일반 Java 어플리케이션
+		app.setWebApplicationType(WebApplicationType.SERVLET); // Java 웹어플리케이션
+		app.run(args);
+		
+	}
+
+}
