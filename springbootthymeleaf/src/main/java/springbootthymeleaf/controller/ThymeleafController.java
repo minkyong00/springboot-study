@@ -30,6 +30,8 @@ public class ThymeleafController {
 		model.addAttribute("role", "admin");
 		model.addAttribute("isActive", false);
 		
+		model.addAttribute("username", "hong gil dong");
+		
 		return "thymeleaftags";
 	}
 	
