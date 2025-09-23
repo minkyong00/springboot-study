@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>form</title>
+</head>
+<body>	
+	
+	<form th:action="@{/person/submit}" th:object="${person}" method="post">
+		이름: <input type="text" th:field="*{name}" /><br>
+		나이: <input type="number" th:field="*{age}" /><br>
+		<button>전송</button>
+	</form>
+	
+</body>	
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
