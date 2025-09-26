@@ -1,0 +1,4 @@
+body { font-family: Malgun Gothic, Apple SD Gothic Neo, sans-serif; margin: 2rem; }
+label { display:inline-block; width: 90px; } 
+input { padding: 6px; margin: 4px; }
+button { padding: 6px 12px; }
